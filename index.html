@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <script src="style.js"></script>
+    
+    <title>CALCULATOR</title>
+    
+</head>
+<body>
+    
+    <div class="wrapper">
+        <div class="display">
+          <input type="text" value="0" readonly></input>
+        </div>
+        <div class="container">
+          <table>
+            <tr>
+              <td><button id="num" onclick="insert(1)">1</button></td>
+              <td><button id="num" onclick="insert(2)">2</button></td>
+              <td><button id="num" onclick="insert(3)">3</button></td>
+              <td><button id="num" onclick="insert('+')">+</button></td>
+            </tr>
+            <tr>
+              <td><button id="num" onclick="insert(4)">4</button></td>
+              <td><button id="num" onclick="insert(5)">5</button></td>
+              <td><button id="num" onclick="insert(6)">6</button></td>
+              <td><button id="num" onclick="insert('-')">-</button></td>
+            </tr>
+            <tr>
+              <td><button id="num" onclick="insert(7)">7</button></td>
+              <td><button id="num" onclick="insert(8)">8</button></td>
+              <td><button id="num" onclick="insert(9)">9</button></td>
+              <td><button id="num" onclick="insert('*')">x</button></td>
+            </tr>
+            <tr>
+              <td><button id="exp" onclick="cl()">C</button></td>
+              <td><button id="num" onclick="insert(0)">0</button></td>
+              <td><button id="exp" onclick="eql()">=</button></td>
+              <td><button id="num" onclick="insert('/')">/</button></td>
+            </tr>
+          </table>
+        </div>
+    </div>
+</body>
+</html>
